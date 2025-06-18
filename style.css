@@ -1,22 +1,288 @@
-#cases h2{
-    margin-right: 5px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#cases{
+
+@font-face {
+    font-family: "Recursive";
+    src: url(./font/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --verde: #00CF21;
+    --verdeEscuro: #026900;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.banner {
+    background-image: url(./img/pexels-andre-furtado-43594-1417246.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container-grid img {
+    height: 85px;
+}
+
+.pesquisa {
+    width: 70vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 120px;
+    justify-content: space-between;
+    align-items: end;
 }
 
-#cases img{
-    height: 300px;
+.menu {
+    max-width: 600px;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-size: 20px;
+    color: var(--branco);
+    font-family: "Recursive", sans-linear;
+
+    text-decoration: underline transparent;
+}
+
+.menu a:hover {
+    text-decoration-color: var(--branco);
+}
+
+div .banner {
+    max-width: 600px;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+.titulo{
+    display: flex;
+    align-items: center;
+    font-family: "Recursive", sans-linear;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.titulo h2{
+    color: var(--branco);
+    margin-bottom: 0;
+    background-color: var(--verde);
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+.titulo span{
+    color: var(--branco);
+}
+
+.texto-banner p{
+    color: var(--branco);
+} */
+
+
+
+#sobre h2{
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sobre span{
+    color: #FFFFFF;
+    margin-bottom: 0;
+    background-color: #00CF21;
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+#Nossos h2{
+     color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Nossos span{
+    color: #FFFFFF;
+    margin-bottom: 0;
+    background-color: #00CF21;
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+#sobre img{
+    max-width: 460px;
+    width: 40%;
     border-radius: 40px;
 }
 
-#meuCarrossel{
-    max-width: 1170px;
-    width: 90%;
+#sobre img{
+    align-items: center;
 }
 
+.titulo h2{
+       color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo span{
+    color: #FFFFFF;
+    margin-bottom: 0;
+    background-color: #00CF21;
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+
+/* -------------------Pacotes-------------------- */
+
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #006400;
+  color: white;
+  border-radius: 15px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.preco {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.valor {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ------------------ */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  max-width: 850px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-box, .text-box {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 260px;
+  background-color: white;
+}
+
+.image-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.text-box {
+  background-color: #006400;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+[]

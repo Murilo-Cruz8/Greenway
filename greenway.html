@@ -14,11 +14,13 @@
 
 <body>
     <main>
-        <div class="banner">
-            <header>
 
-                <div class="container-grid">
-                    <img src="./img/pexels-andre-furtado-43594-1417246.jpg" alt="Logo da empresa Greenway">
+        <div class="banner">
+
+            <header class="container-grid">
+                <img src="./img/logo greenway.svg" alt="">
+
+                <div class="pesquisa">
 
                     <nav id="menu" class="menu">
                         <a href="">Sobre</a>
@@ -27,54 +29,182 @@
                         <a href="">Contate-nos</a>
                     </nav>
 
+                    <div class="search-container">
+                        <input type="text" placeholder="Pesquisar">
+                        <button>Buscar</button>
+                    </div>
+                </div>
+            </header>
+
+        </div>
+
+        <section id="sobre">
+            <h2>Sobre a <span>Greenway</span></h2>
+            <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/pexels-mikhail-nilov-8300614 (1).jpg" class="d-block w-100" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/pexels-sam-willis-457311-1154619.jpg" class="d-block w-100" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/pexels-vinay-reddy-sama-471579654-32100798.jpg" class="d-block w-100"
+                            alt="Imagem 3">
+                    </div>
                 </div>
 
-            </header>
-            <div class="conteudo-banner">
-                <div class="texto-banner">
-                    <div class="titulo">
-                        <h2>Sobre</h2><span>a Greenway</span>
+                <!-- Botões de navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+
+                <!-- Indicadores (bolinhas) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+
+
+            <div class="conteudo-sobre">
+                <p>A GreenWay é uma empresa comprometida com a
+                    sustentabilidade, inovação e eficiência. Nossa missão é
+                    oferecer soluções sustentáveis que impactam
+                    positivamente o meio ambiente e a sociedade, sempre aliando tecnologia de ponta e responsabilidade
+                    ecológica.</p>
+            </div>
+        </section>
+
+        <section id="Nossos">
+            <div class="titulo">
+                <h2>Nossos <span>pacotes</span></h2>
+
+        </section>
+        </div>
+
+        </head>
+
+        <body>
+            <div class="container">
+                <!-- Card Salvador -->
+                <div class="card">
+                    <img src="./img/pexels-edurawpro-32060210.jpg" alt="Salvador">
+                    <div class="card-content">
+                        <h2>Salvador</h2>
+                        <p>Saída: Rio De Janeiro</p>
+                        <p>Desconto de 6% no pix</p>
+                        <p class="preco">Preço por pessoa a partir de</p>
+                        <p class="valor">12x R$ 108</p>
                     </div>
-                    <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/pexels-mikhail-nilov-8300614 (1).jpg" class="d-block w-100" alt="Imagem 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/pexels-sam-willis-457311-1154619.jpg" class="d-block w-100" alt="Imagem 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/pexels-vinay-reddy-sama-471579654-32100798.jpg" class="d-block w-100" alt="Imagem 3">
-                            </div>
-                        </div>
+                </div>
 
-                        <!-- Botões de navegação -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Próximo</span>
-                        </button>
+                <!-- Card Porto Seguro -->
+                <div class="card">
+                    <img src="./img/Praia_do_Espelho.jpg" alt="Porto Seguro">
+                    <div class="card-content">
+                        <h2>Porto Seguro</h2>
+                        <p>Saída: Belo Horizonte</p>
+                        <p>Desconto de 6% no pix</p>
+                        <p class="preco">Preço por pessoa a partir de</p>
+                        <p class="valor">12x R$ 138</p>
+                    </div>
+                </div>
 
-                        <!-- Indicadores (bolinhas) -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="0"
-                                class="active"></button>
-                            <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="2"></button>
-                        </div>
+                <!-- Card Recife -->
+                <div class="card">
+                    <img src="./img/o-que-fazer-em-recife-em-1-dia.jpg" alt="Recife">
+                    <div class="card-content">
+                        <h2>Recife</h2>
+                        <p>Saída: Rio De Janeiro</p>
+                        <p>Desconto de 6% no pix</p>
+                        <p class="preco">Preço por pessoa a partir de</p>
+                        <p class="valor">12x R$ 129</p>
                     </div>
                 </div>
             </div>
-    </main>
+        </body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+</html>
+
+<section id="Sobre">
+    <div class="titulo">
+        <h2>Sobre as <span>viajens</span></h2>
+
+    </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cartões de Viagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="image-box">
+            <img src="./img/Group 13.png" alt="Salvador">
+        </div>
+        <div class="text-box">
+            <p>
+                A viagem para Salvador oferece diferentes experiências dependendo do meio de transporte escolhido.
+                Chegar de avião proporciona rapidez, enquanto o ônibus pode ser mais econômico para distâncias
+                terrestres menores.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-box">
+            <img src="./img/Group 12.jpg" alt="Porto Seguro">
+        </div>
+        <div class="text-box">
+            <p>
+                Uma viagem para Porto Seguro é sinônimo de sol, mar, história e muita diversão.
+                É um destino versátil, que agrada desde aqueles que buscam festas e agito, até famílias em busca de
+                tranquilidade
+                e casais que querem explorar praias paradisíacas e vilarejos charmosos.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-box">
+            <img src="./img/thumbnail_cd58e596-e736-4486-b950-27cece46623f.jpg" alt="Recife e Olinda">
+        </div>
+        <div class="text-box">
+            <p>
+                A viagem para Olinda e Recife geralmente envolve chegar primeiro ao Recife por via aérea ou terrestre e,
+                em seguida,
+                utilizar o transporte local para se deslocar para Olinda. A escolha do meio de transporte dependerá do
+                seu orçamento,
+                tempo disponível e ponto de partida.
+            </p>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
